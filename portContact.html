@@ -1,0 +1,383 @@
+<html>
+<head><title>Tahira Shehzadi Website_developer</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</head>
+<style>
+.img-circle {
+    border-radius: 50%;
+	 width: 50%;
+    display: inline-block;
+}
+img {
+    display: circle;
+    margin: auto;
+    width: 100%;
+}
+
+.container {
+    background: gray;
+    position: relative;
+    width: auto;
+	margin: auto;
+    width: 80%;
+    border: auto;
+    padding: 20px;
+}
+#rcorners {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 25px;
+    background:  #3B5998;
+    border-radius: 25px;
+    padding: 20px; 
+    width: 90px;
+    height: 90px;    
+}
+#rcorners1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 25px;
+    background: white;
+    border-radius: 25px;
+    padding: 20px; 
+    width: 700px;
+    height: 570px;    
+	
+}
+#rcorners2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 25px;
+    background:  #3B5998;
+    border-radius: 25px;
+    padding: 20px; 
+    width: 300px;
+    height: 570px;    
+}
+.para{
+color: #839ccf;  
+}
+.para2{
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+	color: #839ccf; 
+}
+.icon {
+    display: circle;
+    margin: auto;
+    width: 50px;
+	 height: 50px;
+}
+blockquote {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    width: 800px;
+    height: 50px;
+    position: relative;
+    marign: 0;
+    padding: 10px 10px;
+    
+}
+blockquote:before, blockquote:after {
+    
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    font-size: 25px;
+    line-height: 1;
+ 
+}
+.icon1 {
+    display: circle;
+    margin: auto;
+    width: 100%;
+	 height: 50px;
+	 padding: 10px 10px;
+}
+#myCarousel.carousel.slide {
+	width: 348px;
+    height: 456px;
+}
+p.test {
+    width: 300px; 
+    word-wrap: break-word;
+}
+p.paraN{
+   color:#3B5998;
+}
+.div2 {
+    width: 400px;
+    height: 550px;    
+    padding: 9px;
+   
+}
+.div1 {
+    width: 250px;
+    height: 550px;    
+    padding: 10px;
+  
+}
+table, th, td {
+    
+    border-collapse: collapse;
+
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+	height: 10px;
+	font-size: 13px;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #3B5998;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {float:left;width:50%}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #3B5998;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+<body class="container" >
+<?php  
+
+
+?>
+
+
+<div class="row">
+<div class="col-md-1">
+<div id=rcorners>
+          <a href="portfolio.html" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-user"></span>
+          </a></div>
+ <div id=rcorners><a href="portResume.html" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-tasks"></span> 
+          </a></div>
+<div id=rcorners><a href="portWork.html" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-briefcase"></span>
+          </a></div>
+<div id=rcorners><a href="portContact.html" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-envelope"></span>
+        </a></div>
+</div>
+
+
+
+<div class="col-md-8">
+<div id=rcorners1> <h4>Contact - Contact Me </h4> <hr/>
+ <div class="row"><div class="col-md-5">
+<div class="div1">
+<h3>CONTACT INFO </h3>
+
+<table class="table table-condensed">
+    
+    <tbody>
+      
+      <tr>
+        <td><a href="#">
+          <span class="glyphicon glyphicon-map-marker">Adress</span>
+        </a></td>
+        <td>Lahore, Pakistan</br></br></td>
+      </tr>
+      <tr>
+        <td><a href="#">
+          <span class="glyphicon glyphicon-envelope">Email</span>
+        </a></td>
+        <td>tahirashehzadi9@gmail.com</td>
+      </tr>
+      <tr>
+        <td> <a href="#">
+          <span class="glyphicon glyphicon-globe">Website</span>
+        </a></td>
+        <td>www.tahirashehzadi.com</td>
+	<tr>
+		<td> <a href="#">
+          <span class="glyphicon glyphicon-comment">Skype</span>
+        </a></td>
+        <td>shehzadi.tahira</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5>FOLLOW ME</h5><hr/>
+<div>
+<a href=https://web.facebook.com><img class="icon" src="w2.PNG" alt="Paris"> </a>
+<a href=https://web.facebook.com><img class="icon" src="w3.PNG" alt="Paris"> </a>
+<a href=https://web.facebook.com><img class="icon" src="w4.PNG" alt="Paris"> </a>
+<a href=https://web.facebook.com><img class="icon" src="w5.PNG" alt="Paris"> </a>
+</div>
+
+
+
+ <h5>REGISTER NOW</h5><hr/>
+
+
+
+
+
+
+
+ </div>
+ 
+ 
+ </div>
+ 
+ 
+  <div class="col-md-2">
+   <div class="div2">
+   
+   
+   <h3>LET'S KEEP IN TOUCH</h3><hr/>
+
+   <form action="welcome.php" method="POST">
+   <div class="form-group">
+    <label for="exampleInputPassword1">Your Name</label>
+    <input type="text" class="form-control" name="name" id="name" placeholder="Name...">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Your Email</label>
+    <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email...">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+    <div class="form-group">
+    <label for="exampleTextarea">Your Message</label>
+    <textarea class="form-control" name="message" id="exampleTextarea" rows="3" placeholder="Messsage..."></textarea>
+  </div>
+  
+    
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+   
+   
+   
+   
+   
+   </div>
+   
+   
+   
+
+ </div>
+</div>
+</div>
+</div>
+
+ <div class="col-md-1"><div id=rcorners2><img class="img-circle" src="p2.png" >
+ <div align="center" class="para"><h3>TAHIRA SHEHZADI</h3><h4>WEBSITE DEVELOPER</h4>Lahore, Pakistan <hr/>
+ <p class="para2">To obtain a position which will allow me the opportunity to utilize my skills and abilities.
+I have developed through my experience and education.</p><hr/>My Social Profiles</div>
+<div>
+<a href=https://web.facebook.com><img class="icon" src="w2.PNG" alt="Paris"> </a>
+<a href=https://www.linkedin.com/feed/?trk=><img class="icon" src="w3.PNG" alt="Paris"> </a>
+<a href=https://web.facebook.com><img class="icon" src="w4.PNG" alt="Paris"> </a>
+<a href=https://web.facebook.com><img class="icon" src="w5.PNG" alt="Paris"> </a>
+</div>
+ </div></div>
+ </div>
+</body>
+</html>
